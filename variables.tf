@@ -1,13 +1,13 @@
 variable "project_id" {
   type = string
-  default = "vital-victor-447510-b5"
+  default = "${{secrets.PROJECT_ID}}"
 }
 
 variable "region" {
   type = string
-  default = "us-central1"
+  default = "${{secrets.REGION}}"
 }
 
 variable "zone" {
-  default = "us-central1-a"
+  default = "${{secrets.ZONE}}"
 }
